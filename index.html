@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Passion+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="jquery-3.6.0.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="main.js"></script>
+  <title>nunuf</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title text-center">nunuf</h1>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section="homeSection" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section="portfolioSection" id="portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section="contactSection" id="contact">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr />
+    </div>
+  </header>
+
+
+  <audio id="chaChingAudio" src="assets/audio/cha-ching.mp3"></audio>
+  <audio id="projectsAudio" src="assets/audio/coins-fallin.mp3"></audio>
+  <audio id="slotMachineAudio" src="assets/audio/slot-machine.mp3"></audio>
+  <audio id="goldAudio" src="assets/audio/gold.mp3"></audio>
+
+
+  <section id="homeSection">
+    <p class="home parallax"></p>
+  </section>
+
+
+  <section id="portfolioSection">
+    <div class="search">
+      <input class="form-control" type="search" placeholder="Search" />
+      <div class="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffd868" class="bi bi-search"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+      </div>
+    </div>
+    <div id="projects"></div>
+  </section>
+
+
+  <section id="contactSection">
+    <div class="contact-img"></div>
+
+    <div class="contact-text fs-4">
+      <p>
+        <b>About me:</b><br />
+        My name is Nofar.<br />
+        I am <span id="age"></span> years old.<br />
+        I have a beautiful white Pekingese.<br />
+        And a BIG bike.<br /><br />
+        <img src="assets/images/GSX.png" />
+      </p>
+      <p>I am a hard worker and passionate about coding.</p>
+      <p>Bla bla...</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
