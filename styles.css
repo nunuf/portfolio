@@ -83,7 +83,7 @@ hr {
 .search {
   position: absolute;
   right: 28px;
-  transform: translate(0, -50px);
+  top: 152px;
 }
 
 @media screen and (max-width: 690px) {
@@ -213,7 +213,13 @@ hr {
 }
 
 #projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin: 20px;
+}
+
+#projects > div {
+  margin: 10px;
 }
 
 .tab-loader {
