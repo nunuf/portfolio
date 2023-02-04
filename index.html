@@ -79,7 +79,7 @@
   </section>
 
   <section id="aboutSection">
-    <div class="flex">
+    <div class="flex full-height">
       <div class="header">
         ABOUT
       </div>
@@ -128,76 +128,78 @@
         </div>
       </div>
 
-      <div class="skills-wrapper flex row-gt-sm">
-        <div class="flex flex-50-gt-sm">
-          <img src="assets/images/nunuf.jpg" class="me" width="220" />
-          <div class="label highlight">Who am I?</div>
-          <div>
-            I'm a Fullstack Developer
-            <br>
-            I have serious passion for UI, animations and creating
-            intuitive, dynamic user experiences.
-            <br>
-            <span class="page-link">
-              <a class="nav-link" href="#contactSection">Let's make something special.</a>
-            </span>
-          </div>
-        </div>
-
-        <div class="flex flex-50-gt-sm bars-wrap">
-          <div class="bar flex row">
-            <div class="bar fill" style="width:90%">
-              <div class="tag flex">Node.js</div>
-              <div class="value flex">90%</div>
+      <div class="skills-wrapper">
+        <div class="vertical-align flex row-gt-sm">
+          <div class="flex">
+            <img src="assets/images/nunuf.jpg" class="me" width="220" />
+            <div class="label highlight">Who am I?</div>
+            <div>
+              I'm a Fullstack Developer
+              <br>
+              I have serious passion for UI, animations and creating
+              intuitive, dynamic user experiences.
+              <br>
+              <span class="page-link">
+                <a class="nav-link" href="#contactSection">Let's make something special.</a>
+              </span>
             </div>
           </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:90%">
-              <div class="tag flex">HTML</div>
-              <div class="value flex">90%</div>
+          <div class="flex bars-wrap">
+            <div class="bar flex row">
+              <div class="bar fill" style="width:90%">
+                <div class="tag flex">Node.js</div>
+                <div class="value flex">90%</div>
+              </div>
             </div>
-          </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:90%">
-              <div class="tag flex">CSS</div>
-              <div class="value flex">90%</div>
+            <div class="bar flex row">
+              <div class="bar fill" style="width:90%">
+                <div class="tag flex">HTML</div>
+                <div class="value flex">90%</div>
+              </div>
             </div>
-          </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:80%">
-              <div class="tag flex">JavaScript</div>
-              <div class="value flex">80%</div>
+            <div class="bar flex row">
+              <div class="bar fill" style="width:90%">
+                <div class="tag flex">CSS</div>
+                <div class="value flex">90%</div>
+              </div>
             </div>
-          </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:80%">
-              <div class="tag flex">TypeScript</div>
-              <div class="value flex">80%</div>
+            <div class="bar flex row">
+              <div class="bar fill" style="width:80%">
+                <div class="tag flex">JavaScript</div>
+                <div class="value flex">80%</div>
+              </div>
             </div>
-          </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:80%">
-              <div class="tag flex">React</div>
-              <div class="value flex">80%</div>
+            <div class="bar flex row">
+              <div class="bar fill" style="width:80%">
+                <div class="tag flex">TypeScript</div>
+                <div class="value flex">80%</div>
+              </div>
             </div>
-          </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:70%">
-              <div class="tag flex">Angular</div>
-              <div class="value flex">70%</div>
+            <div class="bar flex row">
+              <div class="bar fill" style="width:80%">
+                <div class="tag flex">React</div>
+                <div class="value flex">80%</div>
+              </div>
             </div>
-          </div>
 
-          <div class="bar flex row">
-            <div class="bar fill" style="width:50%">
-              <div class="tag flex">UI Design</div>
-              <div class="value flex">50%</div>
+            <div class="bar flex row">
+              <div class="bar fill" style="width:70%">
+                <div class="tag flex">Angular</div>
+                <div class="value flex">70%</div>
+              </div>
+            </div>
+
+            <div class="bar flex row">
+              <div class="bar fill" style="width:50%">
+                <div class="tag flex">UI Design</div>
+                <div class="value flex">50%</div>
+              </div>
             </div>
           </div>
         </div>
@@ -206,13 +208,13 @@
   </section>
 
   <section id="portfolioSection">
-    <div class="flex">
+    <div class="flex full-height">
       <div class="header">
         PROJECTS
       </div>
       <div class="header-bar"></div>
-      <div id="projects">
-        <div class="container">
+      <div id="projects" class="full-height">
+        <div class="container vertical-align">
           <div class="my-slides" id="1" data-url="http://143.198.8.56/login">
             <div class="number-text">1 / 4</div>
             <img src="assets/images/magic-trip.png" alt="Magic Trip" />
@@ -260,25 +262,27 @@
   </section>
 
   <section id="contactSection">
-    <div class="flex">
+    <div class="flex full-height">
       <div class="header">
         CONTACT ME
       </div>
       <div class="header-bar"></div>
-      <div class="label title">
-        Have a question or want to work together?
-      </div>
-      <form id="contact-form" action="mailto:nofarcheka92@gmail.com" method="post" enctype="text/plain">
-        <input placeholder="Name" type="text" name="name" required="">
-        <input placeholder="Enter email" type="email" name="email" required="">
-        <textarea placeholder="Your Message" type="text" name="message"></textarea>
-        <div id="success">
-          <div>
-            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
-          </div>
+      <div class="vertical-align full-height">
+        <div class="label title">
+          Have a question or want to work together?
         </div>
-        <input class="button" type="submit" id="submit" value="SUBMIT">
-      </form>
+        <form id="contact-form" action="mailto:nofarcheka92@gmail.com" method="post" enctype="text/plain">
+          <input placeholder="Name" type="text" name="name" required="">
+          <input placeholder="Enter email" type="email" name="email" required="">
+          <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          <div id="success">
+            <div>
+              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+            </div>
+          </div>
+          <input class="button" type="submit" id="submit" value="SUBMIT">
+        </form>
+      </div>
     </div>
   </section>
 
