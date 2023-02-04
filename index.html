@@ -21,83 +21,270 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="title text-center">nunuf</h1>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-section="homeSection" id="home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-section="portfolioSection" id="portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-section="contactSection" id="contact">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <hr />
-    </div>
-  </header>
-
-
-  <audio id="chaChingAudio" src="assets/audio/cha-ching.mp3"></audio>
-  <audio id="projectsAudio" src="assets/audio/coins-fallin.mp3"></audio>
-  <audio id="slotMachineAudio" src="assets/audio/slot-machine.mp3"></audio>
-  <audio id="goldAudio" src="assets/audio/gold.mp3"></audio>
-
+  <div class="menu">
+    <nav class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#homeSection" data-section="homeSection" id="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutSection" data-section="aboutSection" id="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolioSection" data-section="portfolioSection" id="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection" data-section="contactSection" id="contact">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <section id="homeSection">
-    <p class="home parallax"></p>
+    <img src="./assets/images/raven.gif" alt="Raven" class="raven" />
+    <img src="./assets/images/billboard3.png" alt="Billboard" class="billboard" />
+    <img src="./assets/images/light.png" alt="Light" class="light" />
+    <div class="poster">
+			<ol>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+				<li><div></div><div></div><div></div></li>
+			</ol>
+		</div>
   </section>
 
+  <section id="aboutSection">
+    <div class="flex">
+      <div class="header">
+        ABOUT
+      </div>
+      <div class="header-bar"></div>
+      <div class="flex row label-wrap">
+        <div class="flex row-gt-sm">
 
-  <section id="portfolioSection">
-    <div class="search">
-      <input class="form-control" type="search" placeholder="Search" />
-      <div class="search-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffd868" class="bi bi-search"
-          viewBox="0 0 16 16">
-          <path
-            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-        </svg>
+          <div class="flex bullet-wrap">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="mdi mdi-speedometer"></i>
+              </div>
+            </div>
+            <div>
+              <div class="label">Fast</div>
+              <div class="description">
+                Fast load times and lag free interaction, my highest
+                priority.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex bullet-wrap">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="mdi mdi-cellphone-link"></i>
+              </div>
+            </div>
+            <div>
+              <div class="label">Responsive</div>
+              <div class="description">My layouts will work on any device, big or small.</div>
+            </div>
+          </div>
+
+          <div class="flex bullet-wrap ">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="mdi mdi-lightbulb-outline"></i>
+              </div>
+            </div>
+            <div>
+              <div class="label">Intuitive</div>
+              <div class="description">Strong preference for easy to use, intuitive UX/UI.</div>
+            </div>
+          </div>
+
+          <div class="flex bullet-wrap">
+            <div class="hex-wrap">
+              <div class="hexagon">
+                <i class="mdi mdi-rocket"></i>
+              </div>
+            </div>
+            <div>
+              <div class="label">Dynamic</div>
+              <div class="description">
+                Websites don't have to be static, I love making pages come
+                to life.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-wrapper flex row-gt-sm">
+        <div class="flex flex-50-gt-sm">
+          <img src="assets/images/nunuf.jpg" class="me" width="170" />
+          <div class="label">Who am I?</div>
+          <div>
+            I'm a Fullstack Developer
+            <br>
+            I have serious passion for UI, animations and creating
+            intuitive, dynamic user experiences.
+            <br>
+            <span class="page-link highlight" dest="contact">Let's make something special.</span>
+          </div>
+        </div>
+
+        <div class="flex flex-50-gt-sm bars-wrap">
+          <div class="bar flex row">
+            <div class="bar fill" style="width:90%">
+              <div class="tag flex">Node.js</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:90%">
+              <div class="tag flex">HTML</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:90%">
+              <div class="tag flex">CSS</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:80%">
+              <div class="tag flex">JavaScript</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:80%">
+              <div class="tag flex">TypeScript</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:80%">
+              <div class="tag flex">React</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:50%">
+              <div class="tag flex">Angular</div>
+            </div>
+            <span>50%</span>
+          </div>
+
+          <div class="bar flex row">
+            <div class="bar fill" style="width:50%">
+              <div class="tag flex">UI Design</div>
+            </div>
+            <span>50%</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="projects">
-      <div><img src="assets/images/magic-trip.png" alt="Magic Trip" width="400" /></div>
-      <div><a href="https://github.com/nunuf/vacations">https://github.com/nunuf/vacations</a></div>
-      <div><a href="http://143.198.8.56/login">magic-trip</a></div>
-      <div><img src="assets/images/tic-tac-toe.png" alt="Tic Tac Toe" width="400" /></div>
-      <div><a href="https://github.com/nunuf/tic-tac-toe">https://github.com/nunuf/tic-tac-toe</a></div>
-      <div><a href="https://pink-tic-tac-toe.firebaseapp.com">tic-tac-toe</a></div>
-      <div><img src="assets/images/crypto-gold.png" alt="Crypto Gold" width="400" /></div>
-      <div><a href="https://github.com/nunuf/crypto-gold">https://github.com/nunuf/crypto-gold</a></div>
-      <div><a href="https://nunuf.github.io/crypto-gold">crypto-gold</a></div>
+  </section>
+
+  <section id="portfolioSection">
+    <div class="flex">
+      <div class="header">
+        PROJECTS
+      </div>
+      <div class="header-bar"></div>
+      <div id="projects">
+        <div class="container">
+          <div class="my-slides" id="1">
+            <div class="number-text">1 / 3</div>
+            <img src="assets/images/magic-trip.png" alt="Magic Trip" />
+          </div>
+        
+          <div class="my-slides" id="2"> 
+            <div class="number-text">2 / 3</div>
+            <img src="assets/images/tic-tac-toe.png" alt="Tic Tac Toe" />
+          </div>
+        
+          <div class="my-slides" id="3">
+            <div class="number-text">3 / 3</div>
+            <img src="assets/images/crypto-gold.png" alt="Crypto Gold" />
+          </div>
+            
+          <a id="prev">❮</a>
+          <a id="next">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column" data-id="1" data-url="http://143.198.8.56/login">
+              <img class="thumbnail" src="assets/images/magic-trip.png" alt="Magic Trip" />
+            </div>
+            <div class="column" data-id="2" data-url="https://pink-tic-tac-toe.firebaseapp.com">
+              <img class="thumbnail" src="assets/images/tic-tac-toe.png" alt="Tic Tac Toe" />
+            </div>
+            <div class="column" data-id="3" data-url="https://nunuf.github.io/crypto-gold">
+              <img class="thumbnail" src="assets/images/crypto-gold.png" alt="Crypto Gold" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-
   <section id="contactSection">
-    <div class="contact-img"></div>
-
-    <div class="contact-text fs-4">
-      <p>
-        <b>About me:</b><br />
-        My name is Nofar.<br />
-        I am <span id="age"></span> years old.<br />
-        I have a beautiful white Pekingese.<br />
-        And a BIG bike.<br /><br />
-        <img src="assets/images/GSX.png" />
-      </p>
-      <p>I am a hard worker and passionate about coding.</p>
-      <p>Bla bla...</p>
+    <div class="flex">
+      <div class="header">
+        CONTACT ME
+      </div>
+      <div class="header-bar"></div>
+      <div class="highlight">
+        Have a question or want to work together?
+      </div>
+      <form id="contact-form">
+        <input placeholder="Name" type="text" name="name" required="">
+        <input placeholder="Enter email" type="email" name="email" required="">
+        <textarea placeholder="Your Message" type="text" name="message"></textarea>
+        <div id="success">
+          <div>
+            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+          </div>
+        </div>
+        <input class="button" type="submit" id="submit" value="SUBMIT">
+      </form>
     </div>
   </section>
 
