@@ -32,33 +32,36 @@ $(() => {
   $('#portfolio').on('click', function () {
   });
 
-  $('.my-slides').hide();
-  $('#1').show();
-
   $('.column').on('click', function () {
     $('.my-slides').hide();
     const id = $(this).attr('data-id');
-    $('#' + id).show();
-    const url = $(this).attr('data-url');
-    $('#caption').html(`<a href="${url}" target="_blank">${url}</a>`);
+    showSlide(id);
   });
   
-  const showSlides = (id) => {
+  const navigate = (id) => {
     $('.my-slides').hide();
-    $('#' + id).show();
-    // $('#caption').html(`<a href="${dots[slideIndex-1].alt}">${dots[slideIndex-1].alt}</a>`);
+    if (id < 1) { id = 1; }
+    if (id > $('.my-slides').length) { id = $('.my-slides').length; }
+    showSlide(id);
   };
 
-  let slideIndex = 1;
-  showSlides(slideIndex);
+  const showSlide = (id) => {
+    slideIndex = id;
+    $('#' + slideIndex).show();
+    const url = $('#' + slideIndex).attr('data-url');
+    $('#caption').html(`<a href="${url}" target="_blank">${url}</a>`);
+  };
 
   $('#prev').on('click', function () {
-    showSlides(slideIndex -= 1);
+    navigate(slideIndex - 1);
   });
 
   $('#next').on('click', function () {
-    showSlides(slideIndex += 1);
+    navigate(slideIndex + 1);
   });
+
+  let slideIndex = 1;
+  navigate(slideIndex);
   
   /* ----- Contact tab ----- */
 
