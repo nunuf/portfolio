@@ -120,8 +120,8 @@ body {
 
 #homeSection > .raven {
   position: absolute;
-  top: 4px;
-  right: 6vw;
+  top: 10vh;
+  right: 16vw;
   width: 80px;
   z-index: 2;
 }
@@ -136,8 +136,8 @@ body {
 }
 
 /* BILLBOARD */
-#raven { background-image: url("./assets/images/raven.gif"); background-repeat: no-repeat; }
-#billboard-wrapper { padding-top: 16vh; padding-left: 40vw; }
+/* #raven { background-image: url("./assets/images/raven.gif"); background-repeat: no-repeat; } */
+#billboard-wrapper { padding-top: 10vh; padding-left: 50vw; }
 #billboard-outer { background-image: url("./assets/images/billboard.png"); background-repeat: no-repeat; height: 599px; }
 #billboard { list-style: none; padding-top: 11px; padding-left: 42px; }
 #billboard li { display: inline; float: left; }
