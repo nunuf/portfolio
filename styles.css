@@ -120,7 +120,7 @@ body {
 
 #homeSection > .raven {
   position: absolute;
-  top: 10vh;
+  top: 0vh;
   right: 16vw;
   width: 80px;
   z-index: 2;
