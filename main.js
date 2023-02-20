@@ -7,7 +7,13 @@ $(() => {
   /* ----- Home tab ----- */
 
   // Home tab click event handler
-  $('#home').on('click', function () {
+  $('section').hide();
+  $('#homeSection').show();
+
+  $('a').on('click', function () {
+    const dataSection = $(this).attr('data-section');
+    $('section').hide();
+    $('#' + dataSection).show();
   });
 
   /* ----- About tab ----- */
@@ -35,6 +41,8 @@ $(() => {
   $('.column').on('click', function () {
     $('.my-slides').hide();
     const id = $(this).attr('data-id');
+    $('.thumbnail').removeClass('.active');
+    $('.' + id).addClass('.active');
     showSlide(id);
   });
   
@@ -49,12 +57,14 @@ $(() => {
     slideIndex = id;
     $('#' + slideIndex).show();
     const url = $('#' + slideIndex).attr('data-url');
+    $('.thumbnail').removeClass('active');
+    $('.' + id).addClass('active');
     $('#caption').html(`<a href="${url}" target="_blank">${url}</a>`);
   };
 
   $('#prev').on('click', function () {
     navigate(slideIndex - 1);
-  });
+  }); 
 
   $('#next').on('click', function () {
     navigate(slideIndex + 1);

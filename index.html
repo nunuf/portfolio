@@ -47,9 +47,9 @@
   </div>
 
   <section id="homeSection">
-    <img src="./assets/images/raven.gif" alt="Raven" class="raven" />
-    <!-- <img src="./assets/images/light.png" alt="Light" class="light" /> -->
+    <div id="billboard-container">
     <div id="billboard-wrapper">
+      <img src="./assets/images/raven.gif" alt="Raven" class="raven" />
       <div id="billboard-outer">
         <ol id="billboard">
           <li><div></div><div></div><div></div></li>
@@ -76,7 +76,9 @@
           <li><div></div><div></div><div></div></li>
           <li><div></div><div></div><div></div></li>
         </ol>
+        <img src="./assets/images/light.png" alt="Light" class="light" />
       </div>
+    </div>
     </div>
   </section>
 
@@ -92,8 +94,8 @@
           <div class="flex bullet-wrap">
             <div class="star"></div>
             <div>
-              <div class="label highlight">Fast</div>
               <div class="description">
+                <div class="label highlight">Fast</div>
                 Fast load times and lag free interaction, my highest
                 priority.
               </div>
@@ -149,58 +151,55 @@
 
           <div class="flex bars-wrap">
             <div class="bar flex row">
-              <div class="bar fill" style="width:90%">
+              <div class="bar fill node-bar">
                 <div class="tag flex">Node.js</div>
-                <div class="value flex">90%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:90%">
+              <div class="bar fill html-bar">
                 <div class="tag flex">HTML</div>
-                <div class="value flex">90%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:90%">
+              <div class="bar fill css-bar">
                 <div class="tag flex">CSS</div>
-                <div class="value flex">90%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:80%">
+              <div class="bar fill js-bar">
                 <div class="tag flex">JavaScript</div>
-                <div class="value flex">80%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:80%">
+              <div class="bar fill ts-bar">
                 <div class="tag flex">TypeScript</div>
-                <div class="value flex">80%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:80%">
+              <div class="bar fill react-bar">
                 <div class="tag flex">React</div>
-                <div class="value flex">80%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:70%">
+              <div class="bar fill angular-bar">
                 <div class="tag flex">Angular</div>
-                <div class="value flex">70%</div>
               </div>
             </div>
 
             <div class="bar flex row">
-              <div class="bar fill" style="width:50%">
+              <div class="bar fill ui-bar">
                 <div class="tag flex">UI Design</div>
-                <div class="value flex">50%</div>
+              </div>
+
+            <div class="bar flex row">
+              <div class="bar fill docker-bar">
+                <div class="tag flex">Docker</div>
               </div>
             </div>
           </div>
@@ -216,7 +215,7 @@
       </div>
       <div class="header-bar"></div>
       <div id="projects" class="full-height">
-        <div class="container vertical-align">
+        <div class="container ">
           <div class="my-slides" id="1" data-url="http://143.198.8.56/login">
             <div class="number-text">1 / 4</div>
             <img src="assets/images/magic-trip.png" alt="Magic Trip" />
@@ -237,28 +236,28 @@
             <img src="assets/images/to-do-list.png" alt="ToDo List" />
           </div>
 
-          <a id="prev">❮</a>
-          <a id="next">❯</a>
+          <div id="prev">❮</div>
+          <div id="next">❯</div>
 
           <div class="caption-container">
             <p id="caption"></p>
           </div>
+        </div>
 
           <div class="row">
             <div class="column" data-id="1">
-              <img class="thumbnail" src="assets/images/magic-trip.png" alt="Magic Trip" />
+              <img class="thumbnail 1" src="assets/images/magic-trip.png" alt="Magic Trip" />
             </div>
             <div class="column" data-id="2">
-              <img class="thumbnail" src="assets/images/tic-tac-toe.png" alt="Tic Tac Toe" />
+              <img class="thumbnail 2" src="assets/images/tic-tac-toe.png" alt="Tic Tac Toe" />
             </div>
             <div class="column" data-id="3">
-              <img class="thumbnail" src="assets/images/crypto-gold.png" alt="Crypto Gold" />
+              <img class="thumbnail 3" src="assets/images/crypto-gold.png" alt="Crypto Gold" />
             </div>
             <div class="column" data-id="4">
-              <img class="thumbnail" src="assets/images/to-do-list.png" alt="ToDo List" />
+              <img class="thumbnail 4" src="assets/images/to-do-list.png" alt="ToDo List" />
             </div>
           </div>
-        </div>
       </div>
     </div>
   </section>
