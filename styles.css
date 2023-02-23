@@ -186,17 +186,17 @@ body {
 }
 
 @media only screen and (max-width: 392px) and (min-width: 200px)  {
-  #homeSection .raven {left: -18vw; width: 7vw !important;}
+  #homeSection .raven {left: -22vw; width: 7vw !important;}
   #homeSection .light {
-    left: -50vw !important;
-    top: -10vh;
+    left: -55vw !important;
+    top: -15vh;
     height: 50vh;
     width: 70vw;
   }
   
   #billboard-outer {  height: 0 !important; }
   #billboard { list-style: none; padding-top: 90vh; padding-left: 1vw; }
-  #billboard li div { height: 18vh !important; width: 4vw;}
+  #billboard li div { height: 16vh !important; width: 4vw;}
 }
 
 /* BILLBOARD */
