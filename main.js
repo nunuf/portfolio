@@ -18,20 +18,6 @@ $(() => {
 
   /* ----- About tab ----- */
 
-  // About tab click event handler
-  $('#about').on('click', function () {
-    const birthday = new Date('10/08/1992');
-    // calculate month difference from current date in time
-    const month = Date.now() - birthday.getTime();
-    // convert the calculated difference in date format
-    const ageDiffDate = new Date(month); 
-    // extract year from date    
-    const year = ageDiffDate.getUTCFullYear();
-    // calculate age
-    const age = Math.abs(year - 1970);
-    $('#age').html(age);
-  });
-
   /* ----- Portfolio tab ----- */
 
   // Portfolio tab click event handler
@@ -75,7 +61,10 @@ $(() => {
   
   /* ----- Contact tab ----- */
 
-  // Contact tab click event handler
-  $('#contact').on('click', function () {
+  // Clear inputs after submit
+  $('#submit').on('click', function (){
+    setTimeout(function() {
+      $('form').trigger('reset');   
+    }, 2000);
   });
 });

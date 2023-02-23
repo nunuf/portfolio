@@ -26,6 +26,10 @@ body {
 
 .flex {
   display: flex;
+}
+
+.flex-center {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -33,12 +37,6 @@ body {
 
 .flex.row {
   flex-direction: row;
-}
-
-@media screen and (min-width: 960px) {
-  .flex.row-gt-sm {
-    flex-direction: row;
-  }
 }
 
 .full-height {
@@ -54,32 +52,18 @@ body {
 .header {
   position: relative;
   font-size: 4vh;
+  top: 1vh;
 }
 
 .header-bar {
-  width: 70px;
-  height: 4px;
-  margin: 25px 0 75px 0;
+  width: 7vw;
+  height: 0.8vh;
+  margin: 2vh 0 2vw 0;
   background: #444649;
 }
 
-@media screen and (min-width: 600px) {
-  .label-wrap .label {
-    margin: 15px 0 5px 0;
-  }
-}
-
-.label-wrap .label {
-  margin: 20px 0 10px 0;
-}
-
-@media screen and (min-width: 600px) {
-  .label {
-    font-size: 28px;
-  }
-}
-
 .label {
+  margin-top: 3vh;
   font-size: 3vh;
   font-weight: 500;
 }
@@ -118,7 +102,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 #homeSection .raven {
@@ -138,95 +122,113 @@ body {
   z-index: 3;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 700px)  {
-  #homeSection .raven {left: -20vw; width: 5vw !important;}
+@media only screen and (max-width: 700px) and (min-width: 622px)  {
+  #homeSection .raven {left: 20vw; width: 7vw !important;}
   #homeSection .light {
-    left: -25vw;
-    top: -5vh;
-    height: 40vh;
-    width: 50vw;
+    left: -5vw;
+    top: 2vh;
+    height: 60vh;
+    width: 70vw;
   }
-  #billboard-container {position: absolute; top: 10vh ;width:100vw!important; margin:auto;}
+  #billboard-container {position: relative; width:100vw!important; margin:auto;}
+  #billboard-outer {  height: 0 !important; }
+  #billboard { list-style: none; padding-top: 0vh; padding-left: 1vw; }
+  #billboard li div { height: 35vh !important; width: 4vw;}
+}
+
+
+@media only screen and (max-width: 622px) and (min-width: 568px)  {
+  #homeSection .raven {left: 20vw; width: 7vw !important;}
+  #homeSection .light {
+    left: -5vw !important;
+    top: 3vh;
+    height: 50vh;
+    width: 70vw;
+  }
+
   #billboard-outer {  height: 0 !important; }
   #billboard { list-style: none; padding-top: 80vh; padding-left: 1vw; }
-  #billboard li div { height: 20vh !important; width: 4vw;}
+  #billboard li div { height: 32vh !important; width: 4vw;}
 }
 
 
-@media only screen and (max-width: 700px) and (min-width: 600px)  {
-  #homeSection .raven {left: -20vw; width: 7vw !important;}
+@media only screen and (max-width: 568px) and (min-width: 432px)  {
+  #homeSection .raven {left: 20vw; width: 7vw !important;}
   #homeSection .light {
-    left: -30vw;
-    top: -5vh;
-    height: 40vh;
-    width: 60vw;
+    left: -15vw !important;
+    top: 0vh;
+    height: 50vh;
+    width: 70vw;
   }
-  #billboard-container {position: absolute; top: 10vh ;width:100vw!important; margin:auto;}
+
   #billboard-outer {  height: 0 !important; }
-  #billboard { list-style: none; padding-top: 80vh; padding-left: 1vw; }
-  #billboard li div { height: 20vh !important; width: 4vw;}
+  #billboard { list-style: none; padding-top: 0; padding-left: 1vw; }
+  #billboard li div { height: 28vh !important; width: 4vw;}
 }
 
-
-@media only screen and (max-width: 600px) and (min-width: 500px)  {
-  #homeSection .raven {left: -40vw; width: 7vw !important;}
+@media only screen and (max-width: 432px) and (min-width: 392px)  {
+  #homeSection .raven {left: 10vw; width: 7vw !important;}
   #homeSection .light {
-    left: -35vw;
-    top: -5vh;
-    height: 40vh;
-    width: 60vw;
+    left: -28vw !important;
+    top: 0vh;
+    height: 50vh;
+    width: 70vw;
   }
-  #billboard-container {position: absolute; left: 10vw; top: 10vh; width:100vw!important; margin:auto;}
-  #billboard-outer {  height: 0 !important; }
-  #billboard { list-style: none; padding-top: 80vh; padding-left: 1vw; }
-  #billboard li div { height: 20vh !important; width: 4vw;}
-}
-
-
-@media only screen and (max-width: 500px) and (min-width: 400px)  {
-  #homeSection .raven {left: -40vw; width: 7vw !important;}
-  #homeSection .light {
-    left: -40vw;
-    transform: translate(5vh 30vw);
-    top: -5vh;
-    height: 40vh;
-    width: 60vw;
+  #billboard-container {
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    transform: translate(0, 80%);
   }
-  #billboard-container {position: absolute; top: 10vh ;width:100vw!important; margin:auto;}
   #billboard-outer {  height: 0 !important; }
-  #billboard { list-style: none; padding-top: 80vh; padding-left: 3vw; }
-  #billboard li div { height: 20vh !important; width: 4vw;}
+  #billboard { list-style: none; padding-top: 90vh; padding-left: 1vw; }
+  #billboard li div { height: 24vh !important; width: 4vw;}
 }
 
-@media only screen and (max-width: 400px) and (min-width: 300px)  {
-  #homeSection .raven {left: -50vw; width: 7vw !important;}
+@media only screen and (max-width: 392px) and (min-width: 200px)  {
+  #homeSection .raven {left: -18vw; width: 7vw !important;}
   #homeSection .light {
-    left: -60vw;
+    left: -50vw !important;
     top: -10vh;
-    height: 40vh;
-    width: 60vw;
+    height: 50vh;
+    width: 70vw;
   }
-  #billboard-container {position: absolute; left: 10vw; top: 12vh ;width:100vw; margin:auto;}
-  #billboard-outer {  height: 0px !important; }
-  #billboard { list-style: none; padding-top: 80vh; padding-left: 1vw; }
-  #billboard li div { height: 15vh !important; width: 4vw;}
+  
+  #billboard-outer {  height: 0 !important; }
+  #billboard { list-style: none; padding-top: 90vh; padding-left: 1vw; }
+  #billboard li div { height: 18vh !important; width: 4vw;}
 }
 
 /* BILLBOARD */
-#billboard-container {  width:100vh; margin:0 auto;}
+#billboard-container {
+  width:100vw;
+  height: 100vh;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
 #billboard-wrapper {  width:100vh; margin: 0 auto; }
+
+.frame {
+  position: relative;
+  top: -10px;
+  width: 0vw;
+  z-index: 0;
+}
 
 #billboard-outer { 
   background-image: url("./assets/images/billboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: end center;
-  height: 33.4vw;
+  height: 34vw;
 }
 
-#billboard { list-style: none; padding-top: 11px; padding-left: 2.4vw; }
+#billboard { list-style: none; padding-top: 1.2vh; padding-left: 2.4vw; z-index: 3; }
 #billboard li { display: inline; float: left; }
-#billboard li div { height: 36vh; width: 4vw; position: absolute;
+#billboard li div { height: 37vh; width: 4vw; position: absolute;
 	-webkit-backface-visibility: hidden;
 	-webkit-transition-property: -webkit-transform;
 }
@@ -320,38 +322,29 @@ body {
 #billboard li:nth-child(23) div { background-position: -88vw 0; margin-left:88vw }
 
 
-
 /* ----------------------------- About ----------------------------- */
 
 #aboutSection {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
-/* @media screen and (min-width: 960px) {
-  #aboutSection .bullet-wrap {
-    height: intial;
-    margin: 0;
-    padding: 0 10px;
-  }
-} */
-
-@media screen and (min-width: 600px) {
-  #aboutSection .bullet-wrap {
-    /* height: 230px; */
-  }
+#aboutSection .stars-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-#aboutSection .bullet-wrap {
-  height: 200px;
-  justify-content: flex-start;
-  padding: 0 7px;
-
+.bullet-wrap {
+  align-items: center;
+  justify-content: center;
 }
 
 #aboutSection .star {
-  margin:0.2em auto;
-  font-size: 3em;
+  align-items: flex-start;
+  margin:0.6em auto;
+  font-size: 4em;
   position: relative;
   display: block;
   width: 0px;
@@ -391,22 +384,22 @@ body {
 }
 
 #aboutSection .description {
-  width: 15vw;
+  width: 200px;
 }
 
 #aboutSection .skills-wrapper {
-  align-items: flex-start;
-  width: 84vw;
-  height: 100%;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  width: 100vw;
+  height: 50vh;
 }
-
-#aboutSection .skills-wrapper .me {
-  height: 200px;
-}
-
-#aboutSection img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
+#aboutSection .about-me {
+  margin-left: 3vw;
+  margin-right: 1vw;
+  width: 47vw;
+  height: 50vh;
 }
 
 #aboutSection .page-link {
@@ -415,47 +408,53 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 960px) {
-  #aboutSection .bars-wrap {
-    margin: 0 0 0 0;
+@media screen and (max-width: 960px) {
+  #aboutSection .skills-wrapper {
+    flex-direction: column;
   }
+
+  #aboutSection {
+    overflow-y: scroll;
+  }
+
+  .bars-wraper {
+    margin-top: 6vh;
+  }
+
+  #aboutSection .about-me {
+    margin-left: 0vw;
+    width: 90vw;
+  }
+
 }
 
 #aboutSection .bars-wrap {
   max-width: 90%;
+  min-width: 20vw;
   width: calc(100% - 15px);
 }
 
-@media screen and (min-width: 960px) {
-  #aboutSection .bar {
-    max-width: 90%;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #aboutSection .bar {
-    font-size: 11px;
-    height: 28px;
-    margin: 0 0 15px 0;
+@media screen and (max-width: 1000px) {
+  #aboutSection {
+    min-height: 100vh;
   }
 }
 
 #aboutSection .bar {
-  align-items: flex-end;
   background-color: #eee;
   color: #666;
+  font-size: 3vh;
+  height: 4vh;
   margin: 0 0 12px 0;
   position: relative;
 }
 
-#aboutSection .bar:nth-child(1) .fill {
-  transition: 1.1s 0.2s width ease-in-out;
-}
-
 #aboutSection .bar.fill {
+  text-align: end;
   position: absolute;
   top: 0;
   left: 0;
+  color: white;
   background-image: linear-gradient(var(--dark-gold), var(--medium-gold), var(--gold));
   opacity: 1;
   padding: 0;
@@ -473,63 +472,62 @@ body {
   border-radius: 10px;
   height: 100%;
   width: 10vw;
-  font-size: 3vh;
+  font-size: 2vw;
 }
 
-#aboutSection .bar.flex.row {
-  flex-wrap: nowrap;
+#aboutSection .bar.flex-center.row {
   width: 100%;
   border-radius: 10px;
 }
 
 .node-bar {
-  animation: color-bar 1s 1s ease-out alternate infinite;
+  animation: color-bar 4s 0.6s ease-out alternate infinite;
 }
 
 .html-bar {
-  animation: color-bar 1s 0.5s ease-out alternate infinite;
+  animation: color-bar 4s 0.5s ease-out alternate infinite;
 }
 
 .css-bar {
-  animation: color-bar 1s 1.5s ease-out alternate infinite;
+  animation: color-bar 4s 0.15s ease-out alternate infinite;
 }
 
 .js-bar {
-  animation: color-bar 1s 0.35s ease-out alternate infinite;
+  animation: color-bar 4s 0.35s ease-out alternate infinite;
 }
 
 .ts-bar {
-  animation: color-bar 1s 2s ease-out alternate infinite;
+  animation: color-bar 4s 0.8s ease-out alternate infinite;
 }
 
 .react-bar {
-  animation: color-bar 1s 1s ease-out alternate infinite;
+  animation: color-bar 4s 1s ease-out alternate infinite;
 }
 
 .angular-bar {
-  animation: color-bar 1s 0.5s ease-out alternate infinite;
+  animation: color-bar 4s 0.5s ease-out alternate infinite;
 }
 
 .ui-bar {
-  animation: color-bar 1s 1.5s ease-out alternate infinite;
+  animation: color-bar 4s 0.6s ease-out alternate infinite;
 }
 
 .docker-bar {
-  animation: color-bar 1s 1.75s ease-out alternate infinite;
+  animation: color-bar 4s 0.75s ease-out alternate infinite;
 }
 
 @keyframes color-bar {
   0% {
-    width: 10%;
+    width: 30%;
   }
   10% {
-    width: 15%;
+    width: 40%;
   }
   20% {
-    width: 20%;
+    width: 40%;
   }
   30% {
-    width: 30%;
+    width: 50%;
   }
   40% {
     width: 40%;
@@ -625,16 +623,16 @@ body {
 }
 
 #projects .row {
-  /* content: ""; */
   display: flex;
-  /* clear: both; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* Columns side by side */
 #projects .column {
-  flex-direction: row;
-  margin-top: 2px;
-  /* float: left; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
   width: 20%;
 }
 
@@ -673,9 +671,12 @@ body {
 }
 
 #contactSection form {
-  min-width: 500px;
+  min-width: 35vw;
   margin: 40px auto 0 auto;
-  max-width: 95%;
+}
+
+#contactSection input, #contactSection textarea {
+ font-size: 3vh;
 }
 
 #contactSection input[type=text],
@@ -705,16 +706,9 @@ body {
   transition: height 0.25s;
 }
 
-@media screen and (min-width: 960px) {
-  #contactSection .button {
-    font-size: 18px;
-  }
-}
-
 #contactSection .button {
   background: transparent;
   color: var(--white);
-  font-size: 14px;
   margin: 5px 0 0 0;
   outline: 0;
   padding: 10px 30px;
@@ -725,7 +719,7 @@ body {
   box-sizing: inherit;
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
+  font-size: 3vh;
   padding: 10px 20px;
   transition: all 0.5s;
 }
