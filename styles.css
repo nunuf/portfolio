@@ -633,13 +633,12 @@ body {
 /* Container for image text */
 #projects .caption-container {
   text-align: center;
-  background-color: var(--black);
   padding: 2px 16px;
   color: white;
   opacity: 40%;
   font-size: 2vw;
   position: relative;
-  bottom: 10vh;
+  bottom: 8vh;
   width: 60vw;
 }
 
@@ -648,7 +647,8 @@ body {
   opacity: 90%;
 }
 
-.caption {
+#caption {
+  background-color: var(--dark);
   display: inline-block;
 }
 
