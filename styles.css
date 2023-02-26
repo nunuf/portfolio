@@ -15,6 +15,7 @@ body {
   color: var(--white);
   font-family: 'Concert One', cursive;
   text-align: center;
+  line-height: 4vh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -40,7 +41,7 @@ body {
 }
 
 .full-height {
-  height: 100%;
+  height: 100vh;
 }
 
 .vertical-align {
@@ -186,9 +187,9 @@ body {
 }
 
 @media only screen and (max-width: 392px) and (min-width: 200px)  {
-  #homeSection .raven {left: -28vw; width: 7vw !important;}
+  #homeSection .raven {left: -42vw; width: 7vw !important;}
   #homeSection .light {
-    left: -57vw !important;
+    left: -68vw !important;
     top: -15vh;
     height: 50vh;
     width: 70vw;
@@ -196,7 +197,7 @@ body {
   
   #billboard-outer {  height: 0 !important; }
   #billboard { list-style: none; padding-top: 1.2vh; padding-left: 1vw; }
-  #billboard li div { height: 14vh !important; width: 4vw;}
+  #billboard li div { height: 12vh !important; width: 2vw;}
 }
 
 /* BILLBOARD */
@@ -554,62 +555,77 @@ body {
 /* ----------------------------- Portfolio ----------------------------- */
 
 #portfolioSection {
-  height: 100vh;
+  margin: 0;
   width: 100vw;
   background-image: url(assets/images/portal.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-#projects > .container {  
+.portfolio-container {
   position: relative;
-  width: 40vw;
+  top: 50%;
+  transform: translate(0, -30%);
+  height: 100vh;
 }
 
-#projects img {
+#projects > .projects-container {  position: relative;
+  left: 50%;
+  transform: translate(-60%, 0);
+  width: 50vw;
+}
+
+#projects .display-img {
+  vertical-align: middle;
+  width: 60vw;
+}
+
+#projects .thumbnail {
   vertical-align: middle;
   width: 100%;
+  height: 100%;
+}
+.control-buttons {
+ bottom: 10vh;
 }
 
 /* Next & previous buttons */
 #projects #prev,
 #projects #next {
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
+  position: relative;
+  display: inline-block;
+  padding: 1vw;
   color: white;
   font-weight: bold;
-  font-size: 20px;
-  user-select: none;
-  -webkit-user-select: none;
+  font-size: 5vh;
+  border-radius: 20%;
 }
 
 /* Position the "prev button" to the left */
 #projects #prev {
-  left: 12px;
-  border-radius: 0 3px 3px 0;
+  right: 22vw;
 }
 
 /* Position the "next button" to the right */
 #projects #next {
-  right: 12px;
-  border-radius: 3px 0 0 3px;
+  left: 22vw;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 #projects #prev:hover,
 #projects #next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 #projects .number-text {
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 1vw;
+  padding: 0.8vh 1vw;
   position: absolute;
   top: 0;
 }
@@ -620,6 +636,20 @@ body {
   background-color: var(--black);
   padding: 2px 16px;
   color: white;
+  opacity: 40%;
+  font-size: 2vw;
+  position: relative;
+  bottom: 10vh;
+  width: 60vw;
+}
+
+#projects .caption-container:hover {
+  color: white;
+  opacity: 90%;
+}
+
+.caption {
+  display: inline-block;
 }
 
 #projects .row {
@@ -640,11 +670,6 @@ body {
 #projects .thumbnail {
   opacity: 0.6;
   cursor: pointer;
-}
-
-#projects .active {
-  opacity: 1;
-  border: 1px solid var(--white);
 }
 
 #projects .active,
@@ -688,9 +713,10 @@ body {
   color: var(--white);
   border: 0;
   box-sizing: border-box;
+  line-height: 1vh;
   outline: none;
   margin-bottom: 3px;
-  padding: 10px 15px;
+  padding: 1vh 1vw;
 }
 
 #contactSection textarea {
